@@ -28,7 +28,7 @@ export default class Wait extends React.Component<{}, { seconds: number }> {
             </div>
           </React.Fragment>
         ) : (
-          <div>Idziemy do następnego kroku!</div>
+          <div>Filtr przepłukany? Idziemy do następnego kroku!</div>
         )}
         <NextButton caption="Dalej" path="/press" />
       </div>
