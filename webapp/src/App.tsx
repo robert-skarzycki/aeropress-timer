@@ -6,7 +6,6 @@ import Preinfuse from "./Preinfuse";
 import Fill from "./Fill";
 import Wait from "./Wait";
 import Press from "./Press";
-import WashFilter from "./WashFilter";
 
 const App: React.FC = () => {
   return (
@@ -18,7 +17,6 @@ const App: React.FC = () => {
           <Route path="/preinfuse" component={Preinfuse} />
           <Route path="/fill" component={Fill} />
           <Route path="/wait" component={Wait} />
-          <Route path="/wash-filter" component={WashFilter} />
           <Route path="/press" component={Press} />
           <Route path="/" component={Welcome} />
         </Switch>

@@ -7,7 +7,7 @@ export default class Wait extends React.Component<{}, { seconds: number }> {
   constructor(props: any) {
     super(props);
 
-    this.state = { seconds: 30 };
+    this.state = { seconds: 60 };
   }
 
   public componentDidMount() {
@@ -19,11 +19,18 @@ export default class Wait extends React.Component<{}, { seconds: number }> {
       <div>
         <h1>Krok 4 - zaczekaj</h1>
         {this.state.seconds > 0 ? (
-          <div>Zaczekaj {this.state.seconds} sekund...</div>
+          <React.Fragment>
+            <div>Zaczekaj {this.state.seconds} sekund...</div>
+            <div>
+              W międzyczasie do sitka włóż papierowy filtr (albo dwa, jeśli
+              wolisz poeksperymentować ze smakami) i przelej go ciepłą wodą -
+              żeby zneutralizować smak papierowego filtra.
+            </div>
+          </React.Fragment>
         ) : (
           <div>Idziemy do następnego kroku!</div>
         )}
-        <NextButton caption="Dalej" path="/wash-filter" />
+        <NextButton caption="Dalej" path="/press" />
       </div>
     );
   }
