@@ -7,7 +7,7 @@ export default class Wait extends React.Component {
       <div>
         <h1>Krok 4 - zaczekaj</h1>
         <div>Zaczekaj X sekund...</div>
-        <NextButton caption="Dalej" path="/press" />
+        <NextButton caption="Dalej" path="/wash-filter" />
       </div>
     );
   }

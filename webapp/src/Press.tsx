@@ -5,7 +5,7 @@ export default class Press extends React.Component {
   public render(): JSX.Element {
     return (
       <div>
-        <h1>Krok 5 - wyciskanie</h1>
+        <h1>Krok 6 - wyciskanie</h1>
         <div>
           Obróć aeropress do góry nogami, postaw go na filiżance i powoli
           wyciskaj przez X sekund...
